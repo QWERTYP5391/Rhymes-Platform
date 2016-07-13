@@ -1,0 +1,172 @@
+<div class="col-sm-12 col-md-8">
+  <p style="padding:40px;"></p>
+  <div id ="surahDetails" onmousemove="delayUpdatePoints()">
+    <h1 id="surahName">{{surah.name}}</h1>
+    <p id ="surahUrl" style="display: none;">{{surahUrl}}</p>
+    <p id ="points" style="display: none;">{{surahsDetailsData.points}}</p>
+    <div ng-repeat="content in surah.contents track by $index">
+      <h3>{{content}}</h3>
+    </div>
+    <div class=" dropdown pull-right">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        English- Mohammad Marmaduke Pickthal
+        <span class="caret"></span>
+      </button>
+    </div>
+  </div>
+</div>
+<nav>
+  <ul class="pagination pagination-sm col-sm-12 col-md-8">
+    <li><a href="/surahs/{{$position}}">{{$position + 1}}</a></li>
+    <li><a href="/surahs/{{$position + 1}}">{{$position + 2}}</a></li>
+    <li><a href="/surahs/{{$position + 2}}">{{$position + 3}}</a></li>
+    <li><a href="/surahs/{{$position+ 3}}">{{$position + 4}}</a></li>
+    <li><a href="/surahs/{{$position + 4}}">{{$position + 5}}</a></li>
+    <li><a href="/surahs/{{$position + 5}}">{{$position + 6}}</a></li>
+    <li><a href="/surahs/{{$position+ 6}}">{{$position + 7}}</a></li>
+    <li><a href="/surahs/{{$position+ 7}}">{{$position + 8}}</a></li>
+    <li><a href="/surahs/{{$position+ 8}}">{{$position + 9}}</a></li>
+    <li><a href="/surahs/{{$position+ 9}}">{{$position + 10}}</a></li>
+    <li><a href="/surahs/{{$position +10}}">{{$position + 11}}</a></li>
+    <li><a href="/surahs/{{$position + 11}}">{{$position + 12}}</a></li>
+    <li><a href="/surahs/{{$position + 12}}">{{$position + 13}}</a></li>
+    <li><a href="/surahs/{{$position+ 13}}">{{$position + 14}}</a></li>
+    <li><a href="/surahs/{{$position + 14}}">{{$position + 15}}</a></li>
+    <li><a href="/surahs/{{$position + 15}}">{{$position + 16}}</a></li>
+    <li><a href="/surahs/{{$position+ 16}}">{{$position + 17}}</a></li>
+    <li><a href="/surahs/{{$position+ 17}}">{{$position + 18}}</a></li>
+    <li><a href="/surahs/{{$position+ 18}}">{{$position + 19}}</a></li>
+    <li><a href="/surahs/{{$position+ 19}}">{{$position + 20}}</a></li>
+    <li><a href="/surahs/{{$position+ 20}}">{{$position + 21}}</a></li>
+    <li><a href="/surahs/{{$position + 21}}">{{$position + 22}}</a></li>
+    <li><a href="/surahs/{{$position + 22}}">{{$position + 23}}</a></li>
+    <li><a href="/surahs/{{$position+ 23}}">{{$position + 24}}</a></li>
+    <li><a href="/surahs/{{$position + 24}}">{{$position + 25}}</a></li>
+    <li><a href="/surahs/{{$position + 25}}">{{$position + 26}}</a></li>
+    <li><a href="/surahs/{{$position+ 26}}">{{$position + 27}}</a></li>
+    <li><a href="/surahs/{{$position+ 27}}">{{$position + 28}}</a></li>
+    <li><a href="/surahs/{{$position+ 28}}">{{$position + 29}}</a></li>
+    <li><a href="/surahs/{{$position+ 29}}">{{$position + 30}}</a></li>
+    <li><a href="/surahs/{{$position+ 30}}">{{$position + 31}}</a></li>
+    <li><a href="/surahs/{{$position + 31}}">{{$position + 32}}</a></li>
+    <li><a href="/surahs/{{$position + 32}}">{{$position + 33}}</a></li>
+    <li><a href="/surahs/{{$position+ 33}}">{{$position + 34}}</a></li>
+    <li><a href="/surahs/{{$position + 34}}">{{$position + 35}}</a></li>
+    <li><a href="/surahs/{{$position + 35}}">{{$position + 36}}</a></li>
+    <li><a href="/surahs/{{$position + 36}}">{{$position + 37}}</a></li>
+    <li><a href="/surahs/{{$position + 37}}">{{$position + 38}}</a></li>
+    <li><a href="/surahs/{{$position + 38}}">{{$position + 39}}</a></li>
+    <li><a href="/surahs/{{$position + 39}}">{{$position + 40}}</a></li>
+    <li><a href="/surahs/{{$position+ 40}}">{{$position + 41}}</a></li>
+    <li><a href="/surahs/{{$position + 41}}">{{$position + 42}}</a></li>
+    <li><a href="/surahs/{{$position + 42}}">{{$position + 43}}</a></li>
+    <li><a href="/surahs/{{$position+ 43}}">{{$position + 44}}</a></li>
+    <li><a href="/surahs/{{$position + 44}}">{{$position + 45}}</a></li>
+    <li><a href="/surahs/{{$position + 45}}">{{$position + 46}}</a></li>
+    <li><a href="/surahs/{{$position+ 46}}">{{$position + 47}}</a></li>
+    <li><a href="/surahs/{{$position+ 47}}">{{$position + 48}}</a></li>
+    <li><a href="/surahs/{{$position+ 48}}">{{$position + 49}}</a></li>
+    <li><a href="/surahs/{{$position+ 49}}">{{$position + 50}}</a></li>
+    <li><a href="/surahs/{{$position+ 50}}">{{$position + 51}}</a></li>
+    <li><a href="/surahs/{{$position + 51}}">{{$position + 52}}</a></li>
+    <li><a href="/surahs/{{$position + 52}}">{{$position + 53}}</a></li>
+    <li><a href="/surahs/{{$position+ 53}}">{{$position + 54}}</a></li>
+    <li><a href="/surahs/{{$position + 54}}">{{$position + 55}}</a></li>
+    <li><a href="/surahs/{{$position + 55}}">{{$position + 56}}</a></li>
+    <li><a href="/surahs/{{$position+ 56}}">{{$position + 57}}</a></li>
+    <li><a href="/surahs/{{$position+ 57}}">{{$position + 58}}</a></li>
+    <li><a href="/surahs/{{$position+ 58}}">{{$position + 59}}</a></li>
+    <li><a href="/surahs/{{$position+ 59}}">{{$position + 60}}</a></li>
+    <li><a href="/surahs/{{$position+ 60}}">{{$position + 61}}</a></li>
+    <li><a href="/surahs/{{$position + 61}}">{{$position + 62}}</a></li>
+    <li><a href="/surahs/{{$position + 62}}">{{$position + 63}}</a></li>
+    <li><a href="/surahs/{{$position+ 63}}">{{$position + 64}}</a></li>
+    <li><a href="/surahs/{{$position + 64}}">{{$position + 65}}</a></li>
+    <li><a href="/surahs/{{$position + 65}}">{{$position + 66}}</a></li>
+    <li><a href="/surahs/{{$position+ 66}}">{{$position + 67}}</a></li>
+    <li><a href="/surahs/{{$position+ 67}}">{{$position + 68}}</a></li>
+    <li><a href="/surahs/{{$position+ 68}}">{{$position + 69}}</a></li>
+    <li><a href="/surahs/{{$position+ 69}}">{{$position + 70}}</a></li>
+    <li><a href="/surahs/{{$position+ 70}}">{{$position + 71}}</a></li>
+    <li><a href="/surahs/{{$position + 71}}">{{$position + 72}}</a></li>
+    <li><a href="/surahs/{{$position + 72}}">{{$position + 73}}</a></li>
+    <li><a href="/surahs/{{$position+ 73}}">{{$position + 74}}</a></li>
+    <li><a href="/surahs/{{$position + 74}}">{{$position + 75}}</a></li>
+    <li><a href="/surahs/{{$position + 75}}">{{$position + 76}}</a></li>
+    <li><a href="/surahs/{{$position+ 76}}">{{$position + 77}}</a></li>
+    <li><a href="/surahs/{{$position+ 77}}">{{$position + 78}}</a></li>
+    <li><a href="/surahs/{{$position+ 78}}">{{$position + 79}}</a></li>
+    <li><a href="/surahs/{{$position+ 79}}">{{$position + 80}}</a></li>
+    <li><a href="/surahs/{{$position+ 80}}">{{$position + 81}}</a></li>
+    <li><a href="/surahs/{{$position + 81}}">{{$position + 82}}</a></li>
+    <li><a href="/surahs/{{$position + 82}}">{{$position + 83}}</a></li>
+    <li><a href="/surahs/{{$position+ 83}}">{{$position + 84}}</a></li>
+    <li><a href="/surahs/{{$position + 84}}">{{$position + 85}}</a></li>
+    <li><a href="/surahs/{{$position + 85}}">{{$position + 86}}</a></li>
+    <li><a href="/surahs/{{$position+ 86}}">{{$position + 87}}</a></li>
+    <li><a href="/surahs/{{$position+ 87}}">{{$position + 88}}</a></li>
+    <li><a href="/surahs/{{$position+ 88}}">{{$position + 89}}</a></li>
+    <li><a href="/surahs/{{$position+ 89}}">{{$position + 90}}</a></li>
+    <li><a href="/surahs/{{$position+ 90}}">{{$position + 91}}</a></li>
+    <li><a href="/surahs/{{$position + 91}}">{{$position + 92}}</a></li>
+    <li><a href="/surahs/{{$position + 92}}">{{$position + 93}}</a></li>
+    <li><a href="/surahs/{{$position+ 93}}">{{$position + 94}}</a></li>
+    <li><a href="/surahs/{{$position + 94}}">{{$position + 95}}</a></li>
+    <li><a href="/surahs/{{$position + 95}}">{{$position + 96}}</a></li>
+    <li><a href="/surahs/{{$position+ 96}}">{{$position + 97}}</a></li>
+    <li><a href="/surahs/{{$position+ 97}}">{{$position + 98}}</a></li>
+    <li><a href="/surahs/{{$position+ 98}}">{{$position + 99}}</a></li>
+    <li><a href="/surahs/{{$position+ 99}}">{{$position + 100}}</a></li>
+    <li><a href="/surahs/{{$position+ 100}}">{{$position + 101}}</a></li>
+    <li><a href="/surahs/{{$position + 101}}">{{$position + 102}}</a></li>
+    <li><a href="/surahs/{{$position + 102}}">{{$position + 103}}</a></li>
+    <li><a href="/surahs/{{$position+ 103}}">{{$position + 104}}</a></li>
+    <li><a href="/surahs/{{$position + 104}}">{{$position + 105}}</a></li>
+    <li><a href="/surahs/{{$position + 105}}">{{$position + 106}}</a></li>
+    <li><a href="/surahs/{{$position+ 106}}">{{$position + 107}}</a></li>
+    <li><a href="/surahs/{{$position+ 107}}">{{$position + 108}}</a></li>
+    <li><a href="/surahs/{{$position+ 108}}">{{$position + 109}}</a></li>
+    <li><a href="/surahs/{{$position+ 109}}">{{$position + 110}}</a></li>
+    <li><a href="/surahs/{{$position + 110}}">{{$position + 111}}</a></li>
+    <li><a href="/surahs/{{$position + 111}}">{{$position + 112}}</a></li>
+    <li><a href="/surahs/{{$position + 112}}">{{$position + 113}}</a></li>
+    <li><a href="/surahs/{{$position+ 113}}">{{$position + 114}}</a></li>
+  </ul>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="quizModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="quizModalLabel">Quiz</h4>
+      </div>
+      <div class="modal-body">
+        Quizzes coming soon ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function updatePoints(){
+    var surahUrl = document.getElementById("surahUrl").innerHTML;
+    //console.log("The URL is " + surahUrl);
+    var dataRef = new Firebase(surahUrl);
+    var points = parseInt(document.getElementById("points").innerHTML);
+    //console.log("Points from scope  are " + points);
+    var prev = points;
+    var present = prev + 1;
+    dataRef.update({
+      points: present
+    });
+  }
+
+  function delayUpdatePoints(){
+    setInterval(updatePoints,120000);
+  }
+
+</script>

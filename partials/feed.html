@@ -1,0 +1,14 @@
+<div class="col-sm-3 col-md-2 sidebar" ng-controller="feedController">
+  <ul class="nav nav-sidebar">
+    <p style="padding:40px;"></p>
+    <h3><li><a href="/">{{authData.facebook.displayName}}</a></li></h3>
+    <li><a href="/">Points <button class="btn btn-primary">{{totalPoints}}</button></a></li>
+    <li><a href="/">Feed</a></li>
+    <ul>
+      <li ng-repeat="(key, value) in surahsFeed">
+          <p>{{key}} <button class="btn btn-xs btn-success">{{value}}</button></p>
+      </li>
+  </ul>
+</ul>
+
+</div>

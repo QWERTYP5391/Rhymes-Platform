@@ -1,0 +1,13 @@
+<div class="col-sm-12 col-md-8" ng-controller="feedController">
+  <p style="padding:40px;"></p>
+  <h1 class="page-header">User Rankings</h1>
+  <div class="btn-group-vertical" role="group" ng-show="globalFeedData">
+    <ol>
+      <li ng-repeat="item in globalFeedData | orderObjectBy:totalPoints:true">
+        <a class="btn btn-success">
+          {{item.user}} <span class="badge">{{item.totalPoints}}</span>
+        </a>
+        </li>
+    </ol>
+    </div>
+</div>

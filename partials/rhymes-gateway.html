@@ -1,0 +1,38 @@
+<div class="col-sm-12 col-md-8" ng-show="userName">
+  <p style="padding:40px;"></p>
+  <h1 class="page-header">Points By Chapter</h1>
+  <p id ="pointsUrl" style="display: none;">{{pointsUrl}}</p>
+    <div class ="col-sm-12">
+      <h3 id="userName">{{userName}} <span class="btn btn-success btn-md">Points <span id="totalPoints"class="badge">{{totalPoints}}</span></span></h3>
+    </div>
+      <p style="padding:10px;"></p>
+      <div class="btn-group-vertical" role="group">
+      <h3 ng-repeat="(key, value) in feedData" ng-if="value.points > 0">
+          {{value.surah}} <span  class="badge btn btn-success">{{value.points}}</span>
+      </h3>
+    </div>
+</div>
+<div class="col-sm-12 col-md-8" ng-hide="userName">
+  <p style="padding:40px;"></p>
+  <h1 class="page-header">Points By Chapter</h1>
+      <p style="padding:20px;"></p>
+      <div class="btn-group-vertical" role="group">
+      <button class="btn btn-success" type="button">
+         No Chapters Read<span  class="badge"> 0</span>
+      </button>
+    </div>
+</div>
+
+<script>
+  function updateTotalPoints(){
+    var pointsUrl = document.getElementById("pointsUrl").innerHTML;
+    var totalPoints = parseInt(document.getElementById("totalPoints").innerHTML);
+    var dataRef = new Firebase(pointsUrl);
+    dataRef.update({
+      totalPoints: totalPoints,
+    });
+  }
+    setInterval(updateTotalPoints,15000);
+
+
+</script>

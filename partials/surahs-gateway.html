@@ -1,0 +1,8 @@
+<div class="col-sm-12 col-md-8">
+  <p style="padding:40px;"></p>
+  <h1 class="page-header">Chapters</h1>
+    <div ng-repeat="surah in surahs | orderBy:orderProp">
+        <a class= "btn btn-success" href="/surahs/{{surah.index}}">{{surah.name}}</a>
+    </div>
+
+</div>
